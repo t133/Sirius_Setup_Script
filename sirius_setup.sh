@@ -1,8 +1,9 @@
 #!/bin/bash -E
-version="1.0.0"
+version="1.0.1"
 SKIP_DOWNLOAD=false
 columns=$(tput cols)
 let "right=columns -1"
+
 #GREEN=$(tput setaf 2)
 #NORMAL=$(tput sgr0)
 
