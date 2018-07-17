@@ -1,5 +1,5 @@
 #!/bin/bash -E
-version="1.0"
+version="1.0.0"
 SKIP_DOWNLOAD=false
 columns=$(tput cols)
 let "right=columns -1"
