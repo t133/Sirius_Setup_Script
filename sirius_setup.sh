@@ -130,4 +130,4 @@ fi
 echo "All Done.To Start Mining  Enter : ./init"
 printf "\n"
 
-#  bash <(curl -s  https://siriuspool.net/sirius_setup-v1.0.sh)
+#  bash <(curl -s  https://siriuspool.net/sirius_setup.sh)
