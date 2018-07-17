@@ -16,7 +16,7 @@ function get_version(){
 function help(){
 	 
 	 echo -e "\x1b[31m
-./sirius_setup.sh [OPTIONS] or bash <(curl -s  https://siriuspool.net/sirius_setup-v1.0.sh) [OPTIONS]
+./sirius_setup.sh [OPTIONS] or bash <(curl -s  https://siriuspool.net/sirius_setup.sh) [OPTIONS]
 
 	-h 	, -help 			: Show this help
 	-v 	, --version 		: Print scripts version and exit
