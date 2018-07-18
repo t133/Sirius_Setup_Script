@@ -127,7 +127,7 @@ npm install --unsafe-perm
 yarn && yarn build
 cd ..
 clear
-if [ "$SKIP_DOWNLOAD" !== "true" ] ;then
+if [ "$SKIP_DOWNLOAD" != "true" ] ;then
 echo " Downloading The Main-Full-Consensus"
 wget -q https://raw.githubusercontent.com/circulosmeos/gdown.pl/master/gdown.pl
 chmod +x ./gdown.pl
