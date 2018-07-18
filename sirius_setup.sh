@@ -90,7 +90,16 @@ address='"$address"'
 miner_name='$miner_name'
 stats=$stats
 " > init 
-printf './worker --protocol="dumb" --pool=siriuspool.net:3000  --miner=$threads --wallet-address="$address" --statistics=$stats --extra-data="$miner_name"
+printf './worker --protocol="dumb" --pool=siriuspool.net:3000 \
+--miner=$threads --wallet-address="$address" \
+--statistics=$stats --extra-data="$miner_name" \
+--seedPeers: [  \
+        {host: "stats.farm", port: 8443}, \
+        {host: "seed1.jejupool.com", port: 8443},\
+        {host: "kallisto.beeppool.org", port: 8001}, \
+        {host: "nimiq.aschen.ovh", port: 8443}, \
+        {host: "ganymed.beeppool.org", port: 8004}, \
+        {host: "eu.sushipool.com", port: 8443}] \
 ' >> ./init
 chmod +x init 
 printf '#!/bin/bash
