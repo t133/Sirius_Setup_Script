@@ -116,7 +116,7 @@ bash <(curl -s https://deb.nodesource.com/setup_9.x  )
   apt-get install -y nodejs
 fi
 clear
-npm install -g yarn
+#npm install -g yarn
 #rm -r core
 yarn add global gulp
 clear
