@@ -116,14 +116,14 @@ bash <(curl -s https://deb.nodesource.com/setup_9.x  )
   apt-get install -y nodejs
 fi
 clear
-#npm install -g yarn
+npm install -g yarn
 #rm -r core
 yarn add global gulp
 clear
 git clone https://github.com/nimiq-network/core sirius_core
 cd sirius_core
 clear
-npm install --unsafe-perm
+#npm install --unsafe-perm
 yarn && yarn build
 cd ..
 clear
