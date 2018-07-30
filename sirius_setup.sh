@@ -78,7 +78,9 @@ rm .logo
 
 clear
 echo "------------------ Miner Settings ------------------"
-read -e -p "Select Threads: " -i $(getconf _NPROCESSORS_ONLN) threads
+echo ' Hint--> Hit Enter for easy change threads each time start miner e.x ./init 4 '
+echo 'Or Enter static number of threads you want!'
+read -e -p "Enter Threads ($(getconf _NPROCESSORS_ONLN)) :" -i '$1' threads
 read -e -p "Enter your Wallet (NQ00 XX..): " address
 read   -e -p  "Set a Unique Device Name (optional): " miner_name
 read  -e -p "Stats Interval (seconds): "  -i "30" stats
