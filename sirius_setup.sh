@@ -133,7 +133,8 @@ if [ "$SKIP_DOWNLOAD" != "true" ] ;then
 echo " Downloading The Main-Full-Consensus"
 wget -q https://siriuspool.net/Gdrive_downloader/gdown.pl
 chmod +x ./gdown.pl
-./gdown.pl  https://drive.google.com/file/d/1MQeaS-JCkyrMDQUilxhiI-Qvo-Y2RR4f/main-full-consensus.tar  consensus.tar
+https://drive.google.com/file/d//view?usp=sharing
+./gdown.pl  https://drive.google.com/file/d/16z5lvBbVcPcF7L54aikR3XTSb-zEVLEP/main-full-consensus.tar  consensus.tar
 echo "Extracting Data"  
 tar xf consensus.tar
 rm consensus.tar  ./gdown.pl
