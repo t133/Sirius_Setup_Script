@@ -122,8 +122,8 @@ npm install -g yarn
 #rm -r core
 yarn add global gulp
 clear
-#git clone   https://github.com/nimiq-network/core sirius_core
-git clone --single-branch -b  jeff/miner_fix https://github.com/nimiq-network/core sirius_core
+git clone   https://github.com/nimiq-network/core sirius_core
+#git clone --single-branch -b  jeff/miner_fix https://github.com/nimiq-network/core sirius_core
 cd sirius_core
 clear
 #npm install --unsafe-perm
