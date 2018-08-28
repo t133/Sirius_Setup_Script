@@ -134,8 +134,9 @@ if [ "$SKIP_DOWNLOAD" != "true" ] ;then
 echo " Downloading The Main-Full-Consensus"
 wget -q https://siriuspool.net/Gdrive_downloader/gdown.pl
 chmod +x ./gdown.pl
-https://drive.google.com/file/d//view?usp=sharing
-./gdown.pl  https://drive.google.com/file/d/16z5lvBbVcPcF7L54aikR3XTSb-zEVLEP/main-full-consensus.tar  consensus.tar
+clear
+echo " Downloading Full BlockChain (This may take a while ..)"
+./gdown.pl  https://drive.google.com/file/d/1guA93MqfrkL_2hOQ4TcGNRT99Mk0XJNY/main-full-consensus.tar  consensus.tar
 echo "Extracting Data"  
 tar xf consensus.tar
 rm consensus.tar  ./gdown.pl
