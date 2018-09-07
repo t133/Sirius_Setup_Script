@@ -118,7 +118,6 @@ printf '#!/bin/bash
 SCRIPT_PATH=$(dirname "$0")/sirius_core
 $SCRIPT_PATH/clients/nodejs/nimiq "$@"' > worker
 chmod +x ./worker
-exit
 clear
 apt update && apt upgrade -y
 apt install git  build-essential curl 
