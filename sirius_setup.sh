@@ -97,7 +97,7 @@ stats=$stats
 if [ "$threads" == "\$1" ];then
 echo 'if [ "$1"  == "" ] ; then
 echo "Usage : ./init < threads >"
-echo "ex  :  /.init 6"
+echo "ex  :  ./init 6"
 exit
 fi
 ' >> init
