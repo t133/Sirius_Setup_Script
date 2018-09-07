@@ -85,6 +85,10 @@ read -e -p "Enter your Wallet (NQ00 XX..): " address
 read   -e -p  "Set a Unique Device Name (optional): " miner_name
 read  -e -p "Stats Interval (seconds): "  -i "30" stats
 
+if [ $threads == "$1"];then
+echo "$1"
+exit
+fi
 echo  "#!/bin/bash
 UV_THREADPOOL_SIZE=128
 threads=$threads
