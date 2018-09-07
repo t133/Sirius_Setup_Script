@@ -85,10 +85,8 @@ read -e -p "Enter your Wallet (NQ00 XX..): " address
 read   -e -p  "Set a Unique Device Name (optional): " miner_name
 read  -e -p "Stats Interval (seconds): "  -i "30" stats
 
-if [ $threads == "$1"];then
-echo "$1"
-exit
-fi
+
+  
 echo  "#!/bin/bash
 UV_THREADPOOL_SIZE=128
 threads=$threads
@@ -96,6 +94,14 @@ address='"$address"'
 miner_name='$miner_name'
 stats=$stats
 " > init 
+if [ "$threads" == "\$1" ];then
+echo 'if [ $1  == "" ] ; then
+echo "Usage : ./init < threads >"
+echo "ex  :  /.init 6"
+exit
+fi
+' >> init
+fi
 printf './worker --protocol="dumb" --pool=siriuspool.net:3000 \
 --miner=$threads --wallet-address="$address" \
 --statistics=$stats --extra-data="$miner_name" \
@@ -112,7 +118,7 @@ printf '#!/bin/bash
 SCRIPT_PATH=$(dirname "$0")/sirius_core
 $SCRIPT_PATH/clients/nodejs/nimiq "$@"' > worker
 chmod +x ./worker
-
+exit
 clear
 apt update && apt upgrade -y
 apt install git  build-essential curl 
