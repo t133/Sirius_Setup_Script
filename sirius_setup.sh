@@ -95,7 +95,7 @@ miner_name='$miner_name'
 stats=$stats
 " > init 
 if [ "$threads" == "\$1" ];then
-echo 'if [ $1  == "" ] ; then
+echo 'if [ "$1"  == "" ] ; then
 echo "Usage : ./init < threads >"
 echo "ex  :  /.init 6"
 exit
