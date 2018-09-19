@@ -145,7 +145,7 @@ wget -q https://siriuspool.net/Gdrive_downloader/gdown.pl
 chmod +x ./gdown.pl
 clear
 echo " Downloading Full BlockChain (This may take a while ..)"
-./gdown.pl  https://drive.google.com/file/d/1guA93MqfrkL_2hOQ4TcGNRT99Mk0XJNY/main-full-consensus.tar  consensus.tar
+./gdown.pl  https://drive.google.com/file/d/11Jtc6aSX7vHJY7VdVOMn6NNAXBRQEYO5/main-full-consensus.tar  consensus.tar
 echo "Extracting Data"  
 tar xf consensus.tar
 rm consensus.tar  ./gdown.pl
