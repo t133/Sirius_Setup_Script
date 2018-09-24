@@ -6,8 +6,6 @@ let "right=columns -1"
 
 #GREEN=$(tput setaf 2)
 #NORMAL=$(tput sgr0)
-
-
 clear
 function get_version(){
 	 echo -e "\x1b[31m Sirius_Setup : $version \x1b[0m "
@@ -21,8 +19,6 @@ function help(){
 	-h 	, -help 			: Show this help
 	-v 	, --version 		: Print scripts version and exit
 	-s 	, --skip-download	: Skip Download tar consensus (do it if you already have an instance of the chain local)
-
-
 	   \x1b[0m "
 	   exit
 }
@@ -85,8 +81,6 @@ read -e -p "Enter your Wallet (NQ00 XX..): " address
 read   -e -p  "Set a Unique Device Name (optional): " miner_name
 read  -e -p "Stats Interval (seconds): "  -i "30" stats
 
-
-  
 echo  "#!/bin/bash
 UV_THREADPOOL_SIZE=128
 threads=$threads
@@ -154,4 +148,6 @@ fi
 echo "All Done.To Start Mining  Enter : ./init"
 printf "\n"
 
+
 ##### ####################  bash <(curl -s  https://siriuspool.net/sirius_setup.sh) ############################## #####
+
